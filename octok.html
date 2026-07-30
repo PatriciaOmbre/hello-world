@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Octok — AI Chat Agents for Your Website</title>
+<style>
+  :root{
+    --bg:#0b0d12;
+    --bg-alt:#12151c;
+    --border:#232733;
+    --text:#e8eaf0;
+    --muted:#9aa1b1;
+    --accent:#5b6cff;
+    --accent-2:#7de1c9;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.5;
+  }
+  a{color:inherit;text-decoration:none;}
+  header{
+    position:sticky;top:0;z-index:10;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:18px 6vw;
+    background:rgba(11,13,18,.85);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--border);
+  }
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;}
+  .logo-mark{
+    width:28px;height:28px;border-radius:8px;
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  }
+  nav{display:flex;gap:32px;font-size:15px;color:var(--muted);}
+  nav a:hover{color:var(--text);}
+  .nav-actions{display:flex;gap:12px;align-items:center;}
+  .btn{
+    padding:9px 18px;border-radius:8px;font-size:14px;font-weight:600;
+    border:1px solid var(--border);
+  }
+  .btn-primary{
+    background:linear-gradient(135deg,var(--accent),#7b5bff);
+    border:none;color:#fff;
+  }
+  .hero{
+    text-align:center;
+    padding:120px 6vw 90px;
+    max-width:900px;margin:0 auto;
+  }
+  .badge{
+    display:inline-block;padding:6px 14px;border-radius:999px;
+    background:var(--bg-alt);border:1px solid var(--border);
+    color:var(--accent-2);font-size:13px;margin-bottom:24px;
+  }
+  h1{font-size:56px;font-weight:800;line-height:1.15;letter-spacing:-1px;}
+  h1 span{
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hero p{
+    margin:24px auto 36px;max-width:600px;color:var(--muted);font-size:18px;
+  }
+  .hero-actions{display:flex;gap:14px;justify-content:center;}
+  .btn-lg{padding:14px 28px;font-size:16px;}
+  section{padding:80px 6vw;}
+  .section-title{text-align:center;max-width:640px;margin:0 auto 56px;}
+  .section-title h2{font-size:36px;font-weight:800;letter-spacing:-.5px;}
+  .section-title p{color:var(--muted);margin-top:14px;font-size:16px;}
+  .features{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:24px;max-width:1100px;margin:0 auto;
+  }
+  .card{
+    background:var(--bg-alt);border:1px solid var(--border);
+    border-radius:16px;padding:28px;
+  }
+  .card .icon{
+    width:44px;height:44px;border-radius:10px;
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));
+    margin-bottom:18px;
+  }
+  .card h3{font-size:19px;margin-bottom:10px;}
+  .card p{color:var(--muted);font-size:15px;}
+  .cta{
+    text-align:center;background:var(--bg-alt);
+    margin:0 6vw;border-radius:24px;border:1px solid var(--border);
+    padding:70px 6vw;
+  }
+  .cta h2{font-size:34px;font-weight:800;margin-bottom:16px;}
+  .cta p{color:var(--muted);margin-bottom:28px;}
+  footer{
+    padding:48px 6vw;border-top:1px solid var(--border);
+    display:flex;justify-content:space-between;align-items:center;
+    color:var(--muted);font-size:14px;flex-wrap:wrap;gap:16px;
+  }
+  .footer-links{display:flex;gap:24px;}
+  @media (max-width:720px){
+    nav{display:none;}
+    h1{font-size:38px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><span class="logo-mark"></span>Octok</div>
+  <nav>
+    <a href="#features">产品</a>
+    <a href="#features">功能</a>
+    <a href="#pricing">价格</a>
+    <a href="#docs">文档</a>
+  </nav>
+  <div class="nav-actions">
+    <a href="#" class="btn">登录</a>
+    <a href="#" class="btn btn-primary">免费开始</a>
+  </div>
+</header>
+
+<section class="hero">
+  <span class="badge">🤖 AI 客服机器人</span>
+  <h1>为你的网站打造<br/><span>智能对话助手</span></h1>
+  <p>Octok 帮助企业在几分钟内为官网接入 AI 聊天机器人，自动解答访客问题、收集线索、提升转化率。</p>
+  <div class="hero-actions">
+    <a href="#" class="btn btn-primary btn-lg">立即免费试用</a>
+    <a href="#" class="btn btn-lg">查看演示</a>
+  </div>
+</section>
+
+<section id="features">
+  <div class="section-title">
+    <h2>为什么选择 Octok</h2>
+    <p>一套完整的方案，让你的网站聊天机器人快速上线并持续进化</p>
+  </div>
+  <div class="features">
+    <div class="card">
+      <div class="icon"></div>
+      <h3>一行代码接入</h3>
+      <p>复制一段 script 标签，粘贴到你的网站中，几秒钟即可上线智能聊天窗口。</p>
+    </div>
+    <div class="card">
+      <div class="icon"></div>
+      <h3>知识库训练</h3>
+      <p>导入你的文档、网页与常见问题，机器人自动学习并给出准确回答。</p>
+    </div>
+    <div class="card">
+      <div class="icon"></div>
+      <h3>多渠道支持</h3>
+      <p>网站、App、社交媒体统一接入，对话数据实时同步与分析。</p>
+    </div>
+    <div class="card">
+      <div class="icon"></div>
+      <h3>数据与转化分析</h3>
+      <p>追踪访客对话、线索转化与满意度，持续优化客服体验。</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>准备好为你的网站添加智能客服了吗？</h2>
+  <p>现在开始，几分钟内即可完成部署。</p>
+  <a href="#" class="btn btn-primary btn-lg">免费开始使用</a>
+</section>
+
+<footer>
+  <div>© 2026 Octok. All rights reserved.</div>
+  <div class="footer-links">
+    <a href="#">隐私政策</a>
+    <a href="#">服务条款</a>
+    <a href="#">联系我们</a>
+  </div>
+</footer>
+
+<!-- Octok chat agent widget embed -->
+<script>(function(){var s=document.createElement('script');s.src='https://www.octok.com/widget/loader.js';s.async=true;s.dataset.channel='737922229597110272';document.head.appendChild(s);})();</script>
+
+</body>
+</html>
